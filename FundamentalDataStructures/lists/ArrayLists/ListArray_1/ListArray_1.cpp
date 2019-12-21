@@ -95,9 +95,10 @@ class List {
 
 };
 
-int main(int argv, char** argc) {
+int main(int argc, char** argv) {
 	cout << "List Main Start!!!" << endl;
-	List l1;
+	//List l1;
+	AList<int> L1;
 	l1.insert(3);
 	l1.insert(5);
 	l1.insert(67);
@@ -105,8 +106,34 @@ int main(int argv, char** argc) {
 	l1.insert(1);
 	l1.insert(59);
 	l1.print();
+	cout << "Set the fence position!!!" <<endl;
 	l1.setPos(2);
 	l1.print();
-
+	l1.insert(4);
+	l1.print();
+	l1.append(100);
+	l1.print();
+	l1.insert(300);
+	l1.insert(551);
+	l1.insert(677);
+	cout << "set the fence one position back!!" <<endl;
+	l1.prev();
+	l1.print();
+	l1.insert(304);
+	l1.insert(10);
+	cout << "set the fence next position" <<endl;
+	l1.next();
+	l1.print();
+	l1.insert(590);
+	l1.print();
+	cout << "set fence at starting position!!" <<endl;
+	l1.setStart();
+	l1.print();
+	cout << "set fence at end position!!!" <<endl;
+	l1.setEnd();
+	l1.print();
+	cout<<"leftLength"<<l1.leftLength()<<endl;
+	cout<<"rightLength"<<l1.rightLength()<<endl;
+	
 	return 0;
 }
