@@ -97,8 +97,7 @@ class List {
 
 int main(int argc, char** argv) {
 	cout << "List Main Start!!!" << endl;
-	//List l1;
-	AList<int> L1;
+	List l1;
 	l1.insert(3);
 	l1.insert(5);
 	l1.insert(67);
