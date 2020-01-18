@@ -1,0 +1,7 @@
+Stream iterators allow you to treat files and I/O devices (such as cin and cout ) as if they were
+iterators. This makes it easy to use files and I/O devices as arguments to algorithms.
+The major purpose of the input and output iterator categories is to support these stream iterator
+classes. Input and output iterators make it possible for appropriate algorithms to be used
+directly on input and output streams.
+Stream iterators are actually objects of classes that are templetized for different types of input
+or output. There are two stream iterators: ostream_iterator and istream_iterator .

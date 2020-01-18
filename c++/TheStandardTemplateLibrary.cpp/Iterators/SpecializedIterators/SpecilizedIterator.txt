@@ -1,0 +1,3 @@
+two specialized forms of iterators: iterator adapters, which can
+change the behavior of iterators in interesting ways, and stream iterators, which allow input
+and output streams to behave like iterators.
