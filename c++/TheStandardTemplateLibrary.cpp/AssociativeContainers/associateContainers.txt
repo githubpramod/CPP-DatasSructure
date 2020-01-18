@@ -1,0 +1,23 @@
+We’ve seen that the sequence containers (vector, list, and deque) store data items in a fixed lin-
+ear sequence. Finding an item in such a container (unless its index number is known or it’s
+located at an end of the container) will involve the slow process of stepping through the items
+in the container one by one.
+In an associative container the items are not arranged in sequence. Instead they are arranged in
+a more complex way that makes it much faster to find a given item. This arrangement is typi-
+cally a tree structure, although different approaches (such as hash tables) are possible. The
+speed of searching is the main advantage of associative containers.
+Searching is done using a key, which is usually a single value like a number or string. This
+value is an attribute of the objects in the container, or it may be the entire object.
+The two main categories of associative containers in the STL are sets and maps.
+A set stores objects containing keys. A map stores pairs, where the first part of the pair is an
+object containing a key and the second part is an object containing a value.
+In both a set and a map, only one example of each key can be stored. It’s like a dictionary that
+forbids more than one entry for each word. However, the STL has alternative versions of set
+and map that relax this restriction. A multiset and a multimap are similar to a set and a map,
+but can include multiple instances of the same key.
+Associative containers share many member functions with other containers. However, some
+algorithms, such as lower_bound() and equal_range() , exist only for associative containers.
+Also, some member functions that do exist for other containers, such as the push and pop fam-
+ily ( push_back() and so on) have no versions for associative containers. It wouldn’t make
+sense to use push and pop with associative containers, because elements must always be
+inserted in their ordered locations, not at the beginning or end of the container.
