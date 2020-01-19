@@ -1,0 +1,145 @@
+The UML is not a soft-
+ware development process; it is a visual modeling language. However, the UML can play a key
+role in the development process.
+analysis, design, coding, and deployment. This
+was often called the waterfall process, because the sequence ran in one direction, from analysis
+to deployment
+“The Big Picture,” object-oriented programming itself was created
+to solve some of the problems inherent in the development of large programs. Certainly OOP helps
+the design process because objects in the program correspond with objects in the user’s world.
+However, OOP by itself does not tell us what the program should do; it comes into play only
+after the project’s goals have been determined. We need an initial phase that focuses on the
+program’s users and captures their needs. Once this is accomplished we can translate it into an
+object-oriented program design. But how do we perform the initial step of figuring out what the
+users really need?
+Modern Processes
+A large number of software development processes have appeared in recent years. They specify
+the steps in the process and the way clients, analysts, designers and programmers should work
+together. To date, no one system has reached the sort of universal acceptance that the UML has
+in the field of modeling languages. In fact, many experts do not believe that any one develop-
+ment process can be appropriate in every situation. Even when a particular process is chosen, it
+may need to be modified more or less drastically, depending on the project it is applied to.
+However, as an example of a modern development process, we will examine some of the high-
+lights of what we’ll call the Unified Process.
+The Unified Process is divided into four phases:
+• Inception
+• Elaboration
+• Construction
+• Transition
+Use Case Modeling
+Use case modeling allows future users of a software system as much input as possible into its
+design. It uses the vocabulary of the users, not programmers. This focus on users means that
+the initial specification of the program can be understood both by its users and by the software
+engineers designing it.
+There are two main entities in the use case approach: actors and use cases.
+Actors
+An actor is (usually) a person who will use the system we are designing.
+Use Cases
+A use case is a specific task, usually initiated by an actor.
+Scenarios
+A use case usually consists of a number of scenarios. The use case specifies a goal, while a
+scenario represents a particular outcome when attempting to reach that goal.
+In the use case diagram, lines, called associations, connect actors with use cases.
+Use Case Descriptions
+The use case diagram does not have room for detailed descriptions of individual use cases, so
+these must be supplied separately.
+Sometimes two
+columns are used, with the actor’s actions in one column and the system’s response in another.
+A more formal version might include such details as preconditions, postconditions, and a
+detailed sequence of steps. A UML diagram called an activity diagram, which is a form of
+flowchart, is sometimes used to show graphically the sequence of steps in a use case.
+From Use Cases to Classes
+When the actors and use cases have been identified, the development process moves from the
+elaboration to the construction phase. The emphasis shifts from the users to the developers.
+Our first concern is to develop the classes that will be used in the program.
+A UML class diagram can be used to show classes and their
+relationships. A use case is realized by a sequence of messages between objects. We can use
+another UML diagram, an interaction diagram, to detail such a sequence.
+The Programming Problem
+Let’s suppose that you’re an independent programmer, and you’re approached by a potential
+customer whose name is Beverly Smith. Beverly is a small-time landlord: She owns an apart-
+ment building with 12 units. She wants you to write a program that will make it easier for her
+to record data and print reports regarding the finances of the apartment building. If you and
+Beverly can agree on payment, schedule, and the overall purpose of the program, you’ve com-
+pleted the inception part of the development process.
+The Elaboration Phase for the LANDLORD Program
+In the elaboration phase of a major software development project, a group of people, which
+includes the potential users of the program and the software people designing it, meet to dis-
+cuss what the program should do.
+Use Cases
+• Start the program
+• Add a new tenant to the Tenant List
+• Input a rent to the Rent Record
+• Input an expense to the Expense Record
+• Display the Tenant List
+• Display the Rent Record
+• Display the Expense Record
+• Display the Annual Summary
+Use Case Descriptions
+-------
+------
+------
+UML Activity Diagrams
+The UML activity diagram can be used to model use cases. This kind of diagram shows the
+flow of control from one activity to another. It’s similar to the flowchart, which has been
+around since the beginning of programming. However, the activity diagram, like other UML
+diagrams, is more formally specified and has additional capabilities.
+From Use Cases to Classes
+The construction phase of our project begins when we begin to design the program. We’ll start
+by examining the nouns in the use case descriptions, as mentioned earlier.
+Listing the Nouns
+Here’s the list of nouns picked out of the use case descriptions:
+1. User Interface screen
+2. Tenant
+3. Tenant Input screen
+4. Tenant name
+5. Apartment number
+6. Tenant row
+7. Tenant List
+8. Rent payment
+9. Rent Input screen
+10. Month
+11. Rent amount
+12. Rent Record
+13. Rent row
+14. Expense payment
+15. Expense Input screen
+16. Payee
+17. Amount of expense
+18. Day
+19. Budget category
+20. Expense row
+21. Expense Record
+22. Annual Summary
+23. Sum of rents
+24. Total expenses by category
+25. Balance
+Refining the List
+For various reasons, many nouns are inappropriate class candidates.
+1. User Interface screen
+2. Tenant
+3. Tenant Input screen
+4. Tenant List
+5. Rent I nput screen
+6. Rent Record
+7. Rent row
+8. Expense payment
+9. Expense Input screen
+10. Expense Record
+11. Annual Summary
+Class Diagram
+Once we have an idea what classes we will need and how they relate to each other, we can cre-
+ate a class diagram.
+Sequence Diagrams
+Before starting to code, we might want to understand in more detail the steps involved in each
+use case. One way to do this is to generate a UML sequence diagram. A sequence diagram is one
+of two kinds of UML interaction diagrams. The other is the collaboration diagram. Both show
+how events unfold over time, but the sequence diagram depicts time in a more graphical way.
+Sequence Diagram for “Start the Program”
+Sequence Diagram for “Display Tenant List”
+Sequence Diagram for “Add a New Tenant”
+Writing the Code
+Finally, armed with the use case diagram, the detailed use cases, the class diagram, and the
+sequence diagrams, you can crank up your compiler and start writing the actual code. This is
+the second part of the construction phase.
+
