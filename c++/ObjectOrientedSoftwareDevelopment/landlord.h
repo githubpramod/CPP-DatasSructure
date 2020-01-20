@@ -4,7 +4,8 @@
 #include<vector>
 #include<string>
 #include<algorithm>
-unsing namespace std;
+
+using namespace std;
 
 void getaLine(string& inStr);
 char getaChar();

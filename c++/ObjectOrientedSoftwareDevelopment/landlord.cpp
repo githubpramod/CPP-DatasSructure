@@ -20,7 +20,7 @@ int tenant::getAptNumber() { return aptNumber; }
 bool operator < (const tenant& t1, const tenant& t2) { return t1.name < t2.name; }
 bool operator == (const tenant& t1, const tenant& t2) { return t1.name == t2.name; }
 ostream& operator << (ostream& s, const tenant& t) { 
-	s << t.aptNumber << ‘\t’ << t.name << endl; return s; 
+	s << t.aptNumber << '\t' << t.name << endl; return s; 
 }
 /**********************************************************************************/
 void tenantInputScreen::getTenant() {
@@ -300,7 +300,7 @@ userInterface::~userInterface() {
 
 void userInterface::interact() {
 	while(true) {
-		cout << "Enter ‘i’ to input data, \n"
+		cout << "Enter 'i' to input data, \n"
 		<< " 'd' to display a report, \n"
 		<< " 'q' to quit program: ";
 		ch = getaChar();
